@@ -1,0 +1,31 @@
+/*
+ * Copyright 2017 - Till Date BEO Softwares GmbH. All Rights Reserved.
+ */
+package com.beo.atlas.exports;
+
+
+/**
+ * This is the main Dto that contains header object as well as multiple positions objects of Exports Expdat message
+ * 
+ * @author ashlin.jerson
+ * @version 1.0
+ * @since 11 Nov, 2020
+ */
+public class ExportsExpdatMessageDTO extends MessageCommonDTO implements Serializable
+{
+
+	private static final long serialVersionUID = 7419289639094534568L;
+
+	private String userId;
+	
+	public String getUserId()
+	{
+		return userId;
+	}
+
+	public void setUserId(String userId)
+	{
+		this.userId = userId;
+	}
+
+}
